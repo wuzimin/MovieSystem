@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/tv_movie_time"
+        android:text="09:00"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/movie_time_size"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/tv_movie_location"
+        android:layout_marginLeft="20dp"
+        android:text="5号厅"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/movie_time_size"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/tv_movie_price"
+        android:text="40元"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/red"
+        android:textSize="@dimen/movie_time_size"/>
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/ib_choose_seat"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/btn_choose_seat"/>
+
+
+</LinearLayout>
