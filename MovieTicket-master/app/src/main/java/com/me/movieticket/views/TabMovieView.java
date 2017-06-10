@@ -14,9 +14,6 @@ import com.me.movieticket.entity.MovieInfo;
 
 import java.util.List;
 
-/**
- * Created by qwtangwenqiang on 2016/6/5.
- */
 public class TabMovieView extends RelativeLayout {
     private ListView lv_list;
     public TabMovieView(Context context) {

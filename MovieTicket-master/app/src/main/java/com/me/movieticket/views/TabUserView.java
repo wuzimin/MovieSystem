@@ -16,9 +16,7 @@ import com.me.movieticket.database.DataOrder;
 
 import java.util.List;
 
-/**
- * Created by qwtangwenqiang on 2016/6/7.
- */
+// Created by qwtangwenqiang on 2016/6/7.
 public class TabUserView extends RelativeLayout {
     public static TabUserView instance;
     private ListView lv_list;

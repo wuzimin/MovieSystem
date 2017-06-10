@@ -11,11 +11,9 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
-
 import com.me.movieticket.R;
 import com.me.movieticket.database.DataInit;
 import com.me.movieticket.views.TabUserView;
-
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
@@ -50,21 +48,18 @@ public class MainActivity extends AppCompatActivity {
         mTab3.setOnClickListener(new MyOnClickListener(2));
         mTab4.setOnClickListener(new MyOnClickListener(3));
 
-        //将要分页显示的View装入数组中
         LayoutInflater mLi = LayoutInflater.from(this);
         View view1 = mLi.inflate(R.layout.main_tab_movie, null);
         View view2 = mLi.inflate(R.layout.main_tab_other, null);
         View view3 = mLi.inflate(R.layout.main_tab_discover, null);
         View view4 = mLi.inflate(R.layout.main_tab_me, null);
 
-        //每个页面的view数据
         final ArrayList<View> views = new ArrayList<View>();
         views.add(view1);
         views.add(view2);
         views.add(view3);
         views.add(view4);
 
-        //填充ViewPager的数据适配器
         PagerAdapter mPagerAdapter = new PagerAdapter() {
             @Override
             public int getCount() {
@@ -90,9 +85,6 @@ public class MainActivity extends AppCompatActivity {
         mTabPager.setAdapter(mPagerAdapter);
     }
 
-    /**
-     * 头标点击监听
-     */
     public class MyOnClickListener implements View.OnClickListener {
         private int index = 0;
 

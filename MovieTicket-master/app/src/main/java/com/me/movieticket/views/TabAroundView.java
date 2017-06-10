@@ -4,9 +4,6 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.RelativeLayout;
 
-/**
- * Created by qwtangwenqiang on 2016/6/7.
- */
 public class TabAroundView extends RelativeLayout {
     public TabAroundView(Context context) {
         super(context);
